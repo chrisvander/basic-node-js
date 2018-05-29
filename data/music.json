@@ -1,0 +1,37 @@
+{
+  "artist": "Chortex",
+  "num_albums" : 2,
+  "urls" : [
+    {
+      "type" : "apple_music",
+      "url" : "http://apple.com/"
+    },
+    {
+      "type" : "beatport",
+      "url" : "http://beatport.com/"
+    }
+  ],
+  "albums" : [
+    {
+      "title" : "Spaced Out EP",
+      "num_songs" : 3,
+      "tracks" : [
+        "Descent",
+        "What",
+        "HAL"
+      ]
+    },
+    {
+      "title" : "Reckoning",
+      "num_songs" : 12,
+      "tracks" : [
+        "Jupiter",
+        "Hold Up",
+        "Frenzy",
+        "Charisma",
+        "Don't Look Back (Interlude)",
+        "Look Up"
+      ]
+    }
+  ]
+}
