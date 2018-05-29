@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,500,700");
 body {
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
@@ -24,20 +24,28 @@ body {
   .nav {
     font-size: 0.7em; } }
 
+.nav .nav-title, .nav .nav-button {
+  display: table;
+  text-align: center;
+  float: left;
+  height: 3.5em;
+  padding-left: 1.6em;
+  padding-right: 1.6em; }
+
 .nav {
   position: absolute;
   width: 100%;
   background-color: #34495e;
   height: 3.5em;
   padding: 0; }
+  .nav .nav-title .text {
+    display: table-cell;
+    vertical-align: middle;
+    color: #ecf0f1;
+    font-size: 1.3em;
+    font-weight: 700; }
   .nav .nav-button {
     cursor: pointer;
-    display: table;
-    text-align: center;
-    float: left;
-    height: 3.5em;
-    padding-left: 1.6em;
-    padding-right: 1.6em;
     font-size: 1em; }
     .nav .nav-button .text {
       display: table-cell;

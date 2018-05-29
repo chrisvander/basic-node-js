@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,500,700');
 
 body {
   margin: 0;
@@ -20,6 +20,14 @@ body {
 }
 
 $nav-bar-height: 3.5em;
+%nav-element {
+  display: table;
+  text-align: center;
+  float: left;
+  height: $nav-bar-height;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+}
 
 .nav {
   position: absolute;
@@ -27,18 +35,23 @@ $nav-bar-height: 3.5em;
   background-color: #34495e;
   height: $nav-bar-height;
   padding: 0;
+  .nav-title {
+    @extend %nav-element;
+    .text {
+      display: table-cell;
+      vertical-align: middle;
+      color: #ecf0f1;
+      font-size: 1.3em;
+      font-weight: 700;
+    }
+  }
   .nav-button {
+    @extend %nav-element;
     cursor: pointer;
-    display: table;
-    text-align: center;
-    float: left;
-    height: $nav-bar-height;
-    padding-left: 1.6em;
-    padding-right: 1.6em;
     font-size: 1em;
     .text {
       display: table-cell;
-      vertical-align:middle;
+      vertical-align: middle;
       color: #ecf0f1;
     }
   }
