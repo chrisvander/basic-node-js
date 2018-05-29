@@ -1,0 +1,9 @@
+.footer {
+  height: 400px;
+  background-color: $color-graybg;
+  color: $color-graytext;
+  .copyright {
+    text-align: center;
+    font-family: 'Lora', serif;
+  }
+}
