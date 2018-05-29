@@ -29,6 +29,7 @@ body {
 }
 
 #tab-container {
+  overflow: auto;
   .bg {
     background-color: #bdc3c7;
     padding-top: $nav-bar-height;
@@ -58,6 +59,7 @@ body {
     float: left;
     width: 50%;
     word-wrap: break-word;
+    padding-bottom: 4em;
     p {
       font-size: .8em;
       margin: 0.4em 0 0.4em 0;
