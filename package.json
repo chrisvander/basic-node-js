@@ -14,7 +14,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "node-sass": "^4.9.0",
-    "ejs": "^1.0.0",
+    "ejs": "latest",
     "request": "latest"
   }
 }
