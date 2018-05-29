@@ -5,23 +5,31 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Chris Vanderloo</title>
   </head>
-  <body>
+  <body onload="toggleTab(0)">
     <% include ../partials/_nav %>
     <div id="tab-container">
-      <div id="tab1">
+      <div id="tab1" class="tab">
         <div class="header">
           <h1>A Demo Powered By Node.JS and JavaScript</h1>
         </div>
         <div class="body">
-
+          <% include ../partials/_lorem %>
         </div>
       </div>
-      <div id="tab2">
+      <div id="tab2" class="tab">
         <div class="header">
-
+          <h1>About Me</h1>
         </div>
         <div class="body">
-
+          <% include ../partials/_about %>
+        </div>
+      </div>
+      <div id="tab3" class="tab">
+        <div class="header">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="body">
+          <% include ../partials/_contact %>
         </div>
       </div>
     </div>

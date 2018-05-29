@@ -1,6 +1,6 @@
 .nav { font-size: 1em; }
-@media screen and (max-width: 395px) {
-  .nav { font-size: 0.7em }
+@media screen and (max-width: 500px) {
+  .nav { font-size: 0.75em }
 }
 
 %nav-element {
@@ -38,12 +38,7 @@
       color: #ecf0f1;
     }
   }
-  .right {
-    float: right;
-    font-size: 1.6em;
-    padding: 0 1em 0 1em;
-  }
-  .nav-button:hover {
+  .nav-button:hover, .selected {
     background-color: #2c3e50;
   }
 }
