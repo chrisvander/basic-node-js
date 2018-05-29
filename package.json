@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss sass/style.scss public/css/style.css -w"
+    "build-css": "node-sass --include-path scss sass/style.scss public/css/style.css -w",
+    "build": "node-sass --include-path scss sass/style.scss public/css/style.css",
+    "start": "npm run build && node server.js"
   },
   "author": "",
   "license": "ISC",
