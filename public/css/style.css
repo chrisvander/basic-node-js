@@ -60,9 +60,9 @@ body {
   background-color: #bdc3c7;
   padding-top: 3.5em;
   height: 14em;
-  background: linear-gradient(45deg, #C4E538, #C49432, #B53471, #FFC312);
+  background: radial-gradient(circle at 40%, #C0E538 5%, #C4D440 20%, #FFC312 40%, #B53471 90%);
   background-size: 400% 400%;
-  animation: bgmove 10s ease infinite; }
+  animation: bgmove 30s ease infinite; }
   #tab-container .tab {
     display: none; }
   #tab-container .active {
@@ -107,8 +107,12 @@ body {
 
 @keyframes bgmove {
   0% {
-    background-position: 50% 0%; }
+    background-position: 0% 0%; }
+  25% {
+    background-position: 40% 0%; }
   50% {
-    background-position: 50% 100%; }
+    background-position: 100% 0%; }
+  75% {
+    background-position: 60% 0%; }
   100% {
-    background-position: 50% 0%; } }
+    background-position: 0% 0%; } }
