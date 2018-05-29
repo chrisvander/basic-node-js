@@ -1,8 +1,18 @@
+.footer { font-size: 1.5em; }
+
+// EM media queries for relative sizing
+@media screen and (max-width: 900px) {
+  .footer { font-size: 1.25em; }
+}
+@media screen and (max-width: 500px) { .footer { font-size: 0.8em; }}
+
 .footer {
   height: 400px;
   background-color: $color-graybg;
   color: $color-graytext;
   .copyright {
+    padding-top: 2em;
+    font-size: 0.8em;
     text-align: center;
     font-family: 'Lora', serif;
   }
