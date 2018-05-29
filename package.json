@@ -1,0 +1,16 @@
+{
+  "name": "cvanderloo-site",
+  "version": "1.0.0",
+  "description": "A demo website for Node.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/style.scss public/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-sass": "^4.9.0"
+  }
+}
