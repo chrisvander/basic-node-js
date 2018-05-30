@@ -1,20 +1,18 @@
 {
   "artist": "Chortex",
-  "num_albums" : 2,
   "urls" : [
     {
-      "type" : "apple_music",
+      "type" : "Apple Music",
       "url" : "http://apple.com/"
     },
     {
-      "type" : "beatport",
+      "type" : "Beatport",
       "url" : "http://beatport.com/"
     }
   ],
   "albums" : [
     {
       "title" : "Spaced Out EP",
-      "num_songs" : 3,
       "tracks" : [
         "Descent",
         "What",
@@ -23,7 +21,6 @@
     },
     {
       "title" : "Reckoning",
-      "num_songs" : 12,
       "tracks" : [
         "Jupiter",
         "Hold Up",

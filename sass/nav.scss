@@ -12,6 +12,7 @@
 
 .nav {
   position: fixed;
+  min-width: $min-width;
   z-index: 5;
   width: 100%;
   background-color: $color-darkbg;

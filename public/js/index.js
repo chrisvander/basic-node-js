@@ -12,6 +12,13 @@ function toggleElements(id,tabs,className) {
   }
 }
 
+// vue app takes in JSON data and makes it accessible in the DOM
+var app = new Vue({
+  el: '#music-data',
+  data: { results: [] },
+  mounted() { getMusicJSON() }
+});
+
 function getMusicJSON() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', "/data/music", true);
@@ -19,10 +26,7 @@ function getMusicJSON() {
 
   xhr.addEventListener("readystatechange", function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
-        var response = JSON.parse(xhr.responseText);
-        document.getElementById("music-data").textContent = JSON.stringify(response);
+        app.results = JSON.parse(xhr.responseText);
     }
   }, false);
-
-
 }

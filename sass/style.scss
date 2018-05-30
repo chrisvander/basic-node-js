@@ -7,11 +7,15 @@ $color-darkbg-highlight: #2c3e50;
 $color-graybg: #7f8c8d;
 $color-graytext: #ecf0f1;
 
+$min-width: 380px;
+
 @import "nav.scss";
 @import "footer.scss";
+@import "music.scss";
 
 body {
   margin: 0;
+  min-width: $min-width;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1em;
 }

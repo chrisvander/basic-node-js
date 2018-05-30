@@ -10,10 +10,22 @@
   height: 400px;
   background-color: $color-graybg;
   color: $color-graytext;
+  text-align: center;
+  svg {
+    cursor: pointer;
+    display: inline;
+    margin-top: 1em;
+    height: 1.5em;
+    width: 1.5em;
+    fill: $color-graytext;
+    transition: .2s;
+  }
+  svg:hover {
+    fill: $color-darkbg;
+  }
   .copyright {
-    padding-top: 2em;
+    margin-top: 1em;
     font-size: 0.8em;
-    text-align: center;
     font-family: 'Lora', serif;
   }
 }
