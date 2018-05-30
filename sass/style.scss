@@ -25,7 +25,7 @@ body {
 @media screen and (max-width: 900px) {
   #tab-container { font-size: 1.25em; }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #tab-container { font-size: 1em; }
 }
 @media screen and (max-width: 400px) {
@@ -42,7 +42,7 @@ body {
     background-size: 400% 400%;
     animation: bgmove 30s ease infinite;
   }
-  .tab { display: none; } // defaults inactive
+  .tab { text-align: center; display: none; } // defaults inactive
   .active { display: block; }
   .header {
     margin-top: -10em;
@@ -62,24 +62,30 @@ body {
   .column {
     float: left;
     width: 50%;
-    word-wrap: break-word;
     padding-bottom: 4em;
     p {
+      display: inline-block;
       font-size: .8em;
       margin: 0.4em 0 0.4em 0;
     }
     h3{ margin: 0.7em 0 0.7em 0; }
+    h4,h5,h6{ margin: 0.3em 0 0.3em 0; }
     @media screen and (max-width: 600px) { float: none; width: 100%; }
   }
-  .body { padding: 0 4em 0 4em; }
-  @media screen and (min-width: 900px) {
-    .body { padding: 0 16em 0 16em; }
+  .body {
+    display: inline-block;
+    padding: 0 4em 0 4em;
+    max-width: 1000px;
+    text-align: left;
   }
-  @media screen and (min-width: 800px) {
-    .body { padding: 0 12em 0 12em; }
+  @media screen and (max-width: 900px) {
+    .body { max-width: 600px; }
   }
-  @media screen and (min-width: 700px) {
-    .body { padding: 0 8em 0 8em; }
+  @media screen and (max-width: 700px) {
+    .body { max-width: 400px; }
+  }
+  @media screen and (max-width: 500px) {
+    .body { max-width: 340px; }
   }
 }
 @keyframes bgmove {
