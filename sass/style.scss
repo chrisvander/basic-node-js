@@ -41,7 +41,7 @@ body {
     height: 14em;
     background: radial-gradient(circle at 10%, #C0E538 5%, #C4D440 12%, #FFC312 30%, #B0D213 50%, #B53471 80%);
     background-size: 400% 400%;
-    animation: bgmove 60s cubic-bezier(0.1,0.1,0.75,1) infinite;
+    animation: bgmove 40s cubic-bezier(0.1,0.1,0.75,1) infinite;
   }
   .tab { text-align: center; display: none; } // defaults inactive
   .active { display: block; }
