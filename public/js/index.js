@@ -1,3 +1,7 @@
+// ----------------- //
+// ---- NAV BAR ---- //
+// ----------------- //
+
 function toggleTab(id) {
   toggleElements(id, document.getElementsByClassName("tab"), "active");
   toggleElements(id, document.getElementsByClassName("nav-button"), "selected");
@@ -23,7 +27,10 @@ window.onload = function() {
   }
 }
 
-// vue app takes in JSON data and makes it accessible in the DOM
+// ----------------- //
+// ----- MUSIC ----- //
+// ----------------- //
+
 var app = new Vue({
   el: '#vue-music',
   data: { results: [] },
@@ -41,3 +48,50 @@ function getMusicJSON() {
     }
   }, false);
 }
+
+// ----------------- //
+// ----- MOVIES ---- //
+// ----------------- //
+
+Vue.component('movie-item', {
+  template: '\
+    <div class="movie">\
+      <span class="title">{{ title }}</span>\
+      <span class="year">{{ year }}</span>\
+      <button v-on:click="$emit(\'remove\')">Remove</button>\
+    </div>\
+  ',
+  props: ['title','year','runtime','rating','director']
+})
+
+var app2 = new Vue({
+  el: '#vue-movies',
+  data: {
+    newMovieText: '',
+    movies: [],
+    nextMovieId: 2
+  },
+  methods: {
+    addNewMovie: function () {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', "http://www.omdbapi.com/?apikey=539d6961&t=" + this.newMovieText, true);
+      xhr.send();
+
+      xhr.addEventListener("readystatechange", function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var ret = JSON.parse(xhr.responseText);
+            console.log(ret);
+            app2.movies.push({
+              id: app2.nextMovieId++,
+              title: ret.Title,
+              year: ret.Year,
+              rating: ret.Rated,
+              runtime: ret.Runtime,
+              director: ret.Director
+            })
+        }
+      }, false);
+      app2.newMovieText = ''
+    }
+  }
+});
