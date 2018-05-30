@@ -1,6 +1,62 @@
 #music-data-container { text-align: center; }
 
-#music-data {
+.music-data {
   display: inline-block;
   text-align: left;
+  border-radius: 20px;
+  background-color: #1abc9c;
+  margin-bottom: 2em;
+  overflow: hidden;
+  .music-header {
+    height: 3em;
+    background-color:#16a085;
+    img {
+      float: left;
+      height: 3em;
+      width: 3em;
+    }
+    .artist {
+      float: left;
+      font-weight: 700;
+      font-size: 1.3em;
+      padding-left: 0.5em;
+      padding-top: 0.5em;
+    }
+  }
+  .urls {
+    height: 1em;
+    width: auto;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    .url {
+      display: inline;
+      float: left;
+      font-size: 0.7em;
+      padding: 0 0.3em 0 0.3em;
+      border-left: 1.5px solid #bdc3c7;
+      margin-right: 0.5em;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+    }
+    .url:hover {
+      background-color: #95a5a6;
+    }
+    background-color: $color-graybg;
+
+  }
+  .albums {
+    padding: 0 1em 1em 1em;
+    .album {
+      padding-top: 0.5em;
+      font-weight: 600;
+      .track {
+        font-weight: 300;
+        font-size: 0.8em;
+        border-bottom: 1px solid;
+      }
+    }
+  }
 }

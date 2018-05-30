@@ -5,16 +5,27 @@ function toggleTab(id) {
 
 function toggleElements(id,tabs,className) {
   for (var i = 0; i < tabs.length; i++) {
-    if (id == i) tabs[i].classList.add(className);
+    if (id == i) {
+      tabs[i].classList.add(className);
+      if (className === "selected") {
+        window.location.hash = 'tab-' + i;
+      }
+    }
     else if (tabs[i].classList.contains(className)) {
       tabs[i].classList.remove(className);
     }
   }
 }
 
+window.onload = function() {
+  if (window.location.hash !== "") {
+    toggleTab(parseInt(window.location.hash[5]));
+  }
+}
+
 // vue app takes in JSON data and makes it accessible in the DOM
 var app = new Vue({
-  el: '#music-data',
+  el: '#vue-music',
   data: { results: [] },
   mounted() { getMusicJSON() }
 });

@@ -1,15 +1,23 @@
 <p>I make electronic music, too! The data below is presented from a simple JSON file and manipulated into the what is shown.</p>
 <div id="music-data-container">
-  <div id="music-data">
-    <div class="artist">{{ results.artist }}</div>
-    <div class="urls">
-      <div class="url" v-for="item in results.urls">
-        <a href="{{ item.url }}">{{ item.type }}</a>
+  <div id="vue-music">
+    <div class="music-data" v-for="artist in results.artists">
+      <div class="music-header">
+        <img v-bind:src="artist.avatar_url">
+        <div class="artist">{{ artist.name }}</div>
       </div>
-    </div>
-    <div class="albums">
-      <div class="album" v-for="album in results.albums">
-        {{ album.title }} has {{ album.tracks.length }} songs
+      <div class="urls">
+        <div class="url" v-for="item in artist.urls">
+          <a v-bind:href="item.url">{{ item.type }}</a>
+        </div>
+      </div>
+      <div class="albums">
+        <div class="album" v-for="album in artist.albums">
+          {{ album.title }} has {{ album.tracks.length }} songs
+          <div class="track" v-for="track in album.tracks">
+            {{ track }}
+          </div>
+        </div>
       </div>
     </div>
   </div>

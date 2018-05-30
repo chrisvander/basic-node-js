@@ -1,33 +1,46 @@
 {
-  "artist": "Chortex",
-  "urls" : [
+  "artists": [
     {
-      "type" : "Apple Music",
-      "url" : "http://apple.com/"
-    },
-    {
-      "type" : "Beatport",
-      "url" : "http://beatport.com/"
-    }
-  ],
-  "albums" : [
-    {
-      "title" : "Spaced Out EP",
-      "tracks" : [
-        "Descent",
-        "What",
-        "HAL"
-      ]
-    },
-    {
-      "title" : "Reckoning",
-      "tracks" : [
-        "Jupiter",
-        "Hold Up",
-        "Frenzy",
-        "Charisma",
-        "Don't Look Back (Interlude)",
-        "Look Up"
+      "name": "Chortex",
+      "avatar_url": "https://i1.sndcdn.com/avatars-000197128390-26u44y-t500x500.jpg",
+      "urls" : [
+        {
+          "type" : "Soundcloud",
+          "url" : "https://soundcloud.com/chortex"
+        },
+        {
+          "type" : "Apple Music",
+          "url" : "https://itunes.apple.com/us/artist/chortex/1232061968"
+        },
+        {
+          "type" : "Beatport",
+          "url" : "https://www.beatport.com/artist/chortex/618053"
+        },
+        {
+          "type" : "Spotify",
+          "url" : "https://open.spotify.com/artist/6Nf6EjiUG7gYxcyHbrsvgs"
+        }
+      ],
+      "albums" : [
+        {
+          "title" : "Spaced Out EP",
+          "tracks" : [
+            "Descent",
+            "What",
+            "HAL"
+          ]
+        },
+        {
+          "title" : "Reckoning",
+          "tracks" : [
+            "Jupiter",
+            "Hold Up",
+            "Frenzy",
+            "Charisma",
+            "Don't Look Back (Interlude)",
+            "Look Up"
+          ]
+        }
       ]
     }
   ]
