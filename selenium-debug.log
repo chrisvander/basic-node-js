@@ -1,0 +1,12 @@
+09:36:00.889 INFO - Launching a standalone Selenium Server
+09:36:01.445 INFO - Java: "Oracle Corporation" 10.0.1+10
+09:36:01.446 INFO - OS: Windows 10 10.0 amd64
+09:36:01.521 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+09:36:01.771 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+09:36:01.772 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+09:36:01.796 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
+09:36:01.799 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+09:36:01.801 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+09:36:02.479 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+09:36:02.479 INFO - Selenium Server is up and running

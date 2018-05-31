@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss sass/style.scss public/css/style.css -r -w sass",
     "build": "node-sass --include-path scss sass/style.scss public/css/style.css",
-    "start": "npm run build && node server.js"
+    "start": "npm run build && node server.js",
+
+    "test-chromewin": "bash scripts\\chromewin.sh"
   },
   "author": "",
   "license": "ISC",
@@ -19,11 +21,11 @@
 
     "chromedriver": "^2.37.0",
     "edgedriver": "^4.16299.0",
-    "geckodriver": "^1.11.0",
+    "geckodriver": "^1.10.0",
     "iedriver": "^3.9.2",
     "nightwatch": "^0.9.20",
     "nightwatch-html-reporter": "^2.0.5",
     "selenium-download": "^2.0.12",
-    "selenium-server": "^3.11.0"
+    "selenium-server": "^2.20.0"
   }
 }
