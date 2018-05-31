@@ -33,7 +33,6 @@ module.exports = {
       .click("#nav-tab4")
       .waitForElementVisible('#tab4', 1000)
       .assert.cssClassPresent('#tab4', 'active')
-      .end();
   },
 
   'Close Out' : function (browser) {
