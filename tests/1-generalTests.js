@@ -1,5 +1,5 @@
-var loadPage = require('../../pages/loadPageAndVerify')
-var closePage = require('../../pages/close')
+var loadPage = require('../test_pages/loadPageAndVerify')
+var closePage = require('../test_pages/close')
 
 module.exports = {
   'Open And Verify Loaded' : function (browser) {

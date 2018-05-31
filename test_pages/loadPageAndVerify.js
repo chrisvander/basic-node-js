@@ -3,6 +3,6 @@ module.exports = function (browser) {
       browser
       .url('http://localhost:8080')
       .resizeWindow(1920, 1080)
-      .waitForElementVisible('body')
+      .waitForElementVisible('body', 1000)
     }
 }
