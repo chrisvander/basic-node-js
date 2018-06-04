@@ -1,5 +1,6 @@
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
+const geckodriver = require("geckodriver");
 const iedriver = require("iedriver");
 const edgedriver = require("edgedriver");
 
@@ -30,7 +31,7 @@ module.exports = {
         "path" : ""
       },
       "desiredCapabilities": {
-        "browserName": "chrome"
+        "browserName": "firefox"
       }
     },
 
@@ -43,6 +44,22 @@ module.exports = {
     "edge" : {
       "desiredCapabilities": {
         "browserName": "MicrosoftEdge"
+      }
+    },
+
+    "ffwin": {
+      "selenium_port": 4444,
+      "selenium_host": "127.0.0.1",
+      "silent": true,
+      "globals": {
+        "waitForConditionTimeout": 5000,
+        "abortOnAssertionFailure": true
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "marionette": false
       }
     }
   }

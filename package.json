@@ -9,7 +9,8 @@
     "build": "node-sass --include-path scss sass/style.scss public/css/style.css",
     "start": "npm run build && node server.js",
 
-    "test-chromewin": "bash scripts\\chromewin.sh"
+    "chromewin": "bash scripts\\chromewin.sh",
+    "ffwin": "bash scripts\\ffwin.sh"
   },
   "author": "",
   "license": "ISC",
