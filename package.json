@@ -8,7 +8,6 @@
     "build-css": "node-sass --include-path scss sass/style.scss public/css/style.css -r -w sass",
     "build": "node-sass --include-path scss sass/style.scss public/css/style.css",
     "start": "npm run build && node server.js",
-
     "chromewin": "bash scripts\\chromewin.sh",
     "ffwin": "bash scripts\\ffwin.sh"
   },
@@ -19,7 +18,6 @@
     "node-sass": "^4.9.0",
     "ejs": "latest",
     "request": "latest",
-
     "chromedriver": "^2.37.0",
     "edgedriver": "^4.16299.0",
     "geckodriver": "^1.10.0",
